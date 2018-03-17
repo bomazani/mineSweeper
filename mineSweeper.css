@@ -1,0 +1,22 @@
+
+
+#board{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: blue;
+    padding: 40px;
+}
+
+.square{
+    border: solid red 2PX;
+    background-color: Yellow;
+    display: flex;
+    height: 40px;
+    width: 40px;
+}
+
+/* .row{
+    border: dotted black 2px;
+    
+} */
