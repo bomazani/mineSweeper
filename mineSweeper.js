@@ -6,8 +6,10 @@ var grid = {
 
     height: 5,
     width: 5,
-
-    numberOfMines: 5,
+    total: this.height * this.width,
+    // numberOfMines: (Math.floor((this.height * this.width) * .15)),
+    // numberOfMines: (this.total * 0.15),
+    numberOfMines: 3,
     minePositionsX: [0],
     minePositionsY: [0],
     minePosition: [0],
@@ -38,6 +40,7 @@ var grid = {
 
             let randomPosition = ("" + x + "-" + y);
             // console.log(randomPosition);
+            console.log(this.numberOfMines);
 
                 if (this.minePosition.includes('randomPosition')) {
                     return;
@@ -77,7 +80,7 @@ var grid = {
 
 grid.generateGrid();
 grid.generateMines();
-// console.log(grid.generateGrid());
+
 // console.log(mineField);
 // console.log(grid.height);
 // console.log(grid.numberOfMines); 
